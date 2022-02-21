@@ -1,0 +1,15 @@
+.profile-info{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 40px;
+    padding: 50px 20px 20px 20px;
+    align-items: center;
+    background-color: #ec6c7e;
+    color: white;
+    p{
+        font-size: 1.3em;
+    }
+    .user-data{
+        font-weight: bold;
+    }
+}

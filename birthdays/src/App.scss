@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+.link{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #80d5cc;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+    background-size: auto;
+    display: flex;
+}
+
+form p{
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 599px){
+        
+
+
+
+}

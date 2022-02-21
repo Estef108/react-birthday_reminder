@@ -1,0 +1,45 @@
+
+.card{
+    background: rgb(195,81,109);
+    background: linear-gradient(22deg, rgba(195,81,109,1) 33%, rgba(237,109,127,1) 59%, rgba(228,177,191,1) 86%);
+    color: white;
+    letter-spacing: 2px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 4px;
+    img{
+        margin-top: 22px;
+    }
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 599px){
+    .card{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: 8px 10px;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px){
+    .card{
+        width: 300px;
+        height: auto;
+        padding: 15px;
+        margin: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1580px){
+    .card{
+        width: 300px;
+        height: auto;
+        padding: 15px;
+        margin: 20px;
+    }
+
+}
