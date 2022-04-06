@@ -4,27 +4,24 @@ import * as S from '../Styles/Styles';
 
 const INITIAL_STATE = {
     name: '',
-    day: '',
-    month: '',
-    year: '',
+    date: new Date(),
     image: '',
     moreInfo: '',
 };
 
-const days = [];
-for (let i = 1; i <= 31; i++) {
-    days.push(i);
-}
+//Format date of today to set max-date possible in input
+let today = new Date();
+let dd = today.getDate();
+let mm = today.getMonth()+1; 
+let yyyy = today.getFullYear();
+if(dd<10){
+  dd='0'+dd
+} 
+if(mm<10){
+  mm='0'+mm
+} 
+today = yyyy+'-'+mm+'-'+dd;
 
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-
-const years = [];
-let myDate = new Date();
-let year = myDate.getFullYear();
-for (let i = year; i >= 1930; i--) {
-    years.push(i);
-}
 
 const Form = (props) => {
     const [state, setState] = useState(INITIAL_STATE);
@@ -33,9 +30,9 @@ const Form = (props) => {
     const submitForm = (e) => {
         e.preventDefault();
 
-        const { name, day, month, year } = state;
+        const { name, date } = state;
 
-        if (!name || !day || !month || !year) {
+        if (!name || !date) {
             setError('Los campos son obligatorios');
             alert(error);
         } else {
@@ -52,9 +49,7 @@ const Form = (props) => {
 
     const body = {
         name: state.name,
-        day: state.day,
-        month: state.month,
-        year: state.year,
+        date: state.date,
         image: state.image,
         moreInfo: state.moreInfo,
     };
@@ -68,8 +63,6 @@ const Form = (props) => {
                     'Content-Type': 'application/json'
                 }
             });
-            // const res = await req.json();
-            // console.log(res);
         } catch (error) {
             console.log(error);
         }
@@ -80,30 +73,7 @@ const Form = (props) => {
             <p>Name</p>
             <S.Input type="text" name="name" value={state.name} onChange={handleInput} />
             <div className='date'>
-                <label>
-                    <p>Day</p>
-                    <S.Select name="day" value={state.day} onChange={handleInput}>
-                        {days.map((value) => {
-                            return <option key={value} value={value}>{value}</option>
-                        })}
-                    </S.Select>
-                </label>
-                <label>
-                    <p>Month</p>
-                    <S.Select name="month" value={state.month} onChange={handleInput}>
-                        {months.map((value) => {
-                            return <option key={value} value={value}>{value}</option>
-                        })}
-                    </S.Select>
-                </label>
-                <label>
-                    <p>Year</p>
-                    <S.Select name="year" value={state.year} onChange={handleInput}>
-                        {years.map((value) => {
-                            return <option key={value} value={value}>{value}</option>
-                        })}
-                    </S.Select>
-                </label>
+                <S.Input type="date" name="date" value={state.date} onChange={handleInput} min="1920-01-01" max={today}/>
             </div>
             <label>
                 <p>Image</p>

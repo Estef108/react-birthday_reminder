@@ -10,14 +10,16 @@ const Profile = () => {
 
   const { email, name } = user || {};
   return (
-    <div className='profile-info'>
+    <>
+      <div className='profile-info'>
       <h1>Profile</h1>
       <p>Name: </p>
       <p className='user-data'>{name}</p>
       <p>Email: </p>
       <p className='user-data'>{email}</p>
-      
     </div>
+    </>
+  
   );
 };
 

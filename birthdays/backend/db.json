@@ -17,67 +17,103 @@
       "email": "isabel@example.com",
       "password": "ret",
       "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "name": "Fany",
+      "email": "fany@example.com",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "name": "Estef",
+      "email": "prueba@example.com",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 8
+    },
+    {
+      "name": "Estef",
+      "email": "estef@estef.com",
+      "password": "estef",
+      "id": 9
+    },
+    {
+      "name": "Estef",
+      "email": "estef@estef.com",
+      "password": "estef",
+      "id": 10
+    },
+    {
+      "name": "Estef",
+      "email": "estef.2@example.com",
+      "password": "estef.2",
+      "id": 11
+    },
+    {
+      "name": "Paula",
+      "email": "paula@example.com",
+      "password": "Paula123.",
+      "id": 12
+    },
+    {
+      "name": "Estef",
+      "email": "estef@estef.com",
+      "password": "Estef123",
+      "id": 13
     }
   ],
   "people": [
     {
-      "name": "Hugh",
-      "day": 12,
-      "month": "October",
-      "year": 1968,
-      "image": "https://www.univision.com/proxy/api/cached/picture?href=https%3A%2F%2Fst1.uvnimg.com%2F98%2Ff5%2Fe79a743c4582a4242d28da1a70be%2Fdacffe915a1c475e8222e645db579abf&width=590&height=395&ratio_width=303&ratio_height=303&resize_option=Fill%20Area",
+      "name": "Kate",
+      "date": "1975-10-05",
+      "image": "https://phantom-telva.unidadeditorial.es/0b88ca5aa86f9ff9adf50ca7982cc26e/resize/828/f/jpg/assets/multimedia/imagenes/2021/06/03/16227113478172.jpg",
+      "moreInfo": "",
       "id": 1
     },
     {
-      "id": 2,
-      "name": "Juliette",
-      "day": 21,
-      "month": "June",
-      "year": 1973,
-      "image": "https://stellameus.com/wp-content/uploads/2019/07/Juliette-Lewis-la-altura-peso-parametros.jpg"
+      "name": "Ryan",
+      "date": "1980-11-12",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Ryan_Gosling_in_2018.jpg/640px-Ryan_Gosling_in_2018.jpg",
+      "moreInfo": "",
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Meryl",
-      "day": 22,
-      "month": "June",
-      "year": 1949,
-      "image": "https://fotografias.antena3.com/clipping/cmsimages02/2020/09/01/E93A532B-C6E3-4052-84FE-DA6A4EC2A691/default.jpg"
+      "name": "Tom",
+      "date": "1989-07-18",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tom_Holland_by_Gage_Skidmore.jpg/1200px-Tom_Holland_by_Gage_Skidmore.jpg",
+      "moreInfo": "",
+      "id": 3
     },
     {
-      "name": "Gerard",
-      "day": 13,
-      "month": "November",
-      "year": 1969,
-      "image": "https://static.onecms.io/wp-content/uploads/sites/20/2021/07/31/Gerard-Butler.jpg",
+      "name": "Christina",
+      "date": "1980-12-02",
+      "image": "https://www.filmler.com/wp-content/uploads/2020/09/dzB58d6fNrTEi7nBAU1tySJc2at.jpg",
+      "moreInfo": "",
       "id": 4
     },
     {
-      "name": "Brian",
-      "day": "20",
-      "month": "February",
-      "year": "1975",
-      "image": "https://mediamass.net/jdd/public/documents/celebrities/4867.jpg",
+      "name": "Martin",
+      "date": "1974-10-08",
+      "image": "https://thumbs.dreamstime.com/b/martin-henderson-los-angeles-ca-de-septiembre-en-el-estreno-americano-su-pel%C3%ADcula-everest-teatro-chino-tcl-hollywood-173175230.jpg",
       "moreInfo": "",
       "id": 5
-    },
-    {
-      "name": "Julia",
-      "day": "20",
-      "month": "February",
-      "year": "1975",
-      "image": "https://imagenes.elpais.com/resizer/060UfD0ex4a46dH09ONgrUC0AS8=/414x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/VUCGNWE2GARMAYGLFIPUSG3TVU.jpg",
-      "moreInfo": "",
-      "id": 6
-    },
-    {
-      "name": "Kate",
-      "day": "5",
-      "month": "May",
-      "year": "1983",
-      "image": "https://www.lecturas.com/medio/2020/09/30/kate-winslet_5fd9c989_800x800.jpg",
-      "moreInfo": "dafs",
-      "id": 7
     }
   ]
 }

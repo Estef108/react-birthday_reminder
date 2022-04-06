@@ -10,10 +10,6 @@ const Home = () => {
       <span>R</span><span>E</span><span>M</span><span>I</span><span>N</span><span>D</span><span> </span><span>M</span><span>E</span>
       </h1>
       <img src={myImage} alt="birthday-cake"/>
-
-
-
-
     </div>
   )
 }

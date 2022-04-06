@@ -13,6 +13,7 @@ const INITIAL_STATE = {
 const RegisterForm = () => {
     const navigate = useNavigate();
     const [data, setData] = useState(INITIAL_STATE);
+    const [error, setError] = useState(null);
 
     const register = async () => {
 
@@ -20,7 +21,7 @@ const RegisterForm = () => {
             name: data.name,
             email: data.email,
             password: data.password,
-        }
+        }      
 
         try {
             const req = await fetch('http://localhost:4000/users', {
@@ -41,6 +42,12 @@ const RegisterForm = () => {
 
     const submitForm = (e) => {
         e.preventDefault();
+        if(!data.name || !data.email || !data.password || !data.rePassword){
+            setError('Formulario incompleto!');
+            return
+        }else{
+            setError(null);
+        }
         console.log(data);
 
         register();
@@ -72,6 +79,7 @@ const RegisterForm = () => {
                     <S.Input type="password" name="rePassword" value={data.rePassword} onChange={handleChange} />
                 </label>
                 <div>
+                {error && <><p>Formulario incompleto!</p><p>Por favor, rellena todos los campos</p></>}
                     <S.Button type="submit">Register</S.Button>
                 </div>
         </S.Form>
